@@ -1,48 +1,62 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f0f0f;
-  color: white;
-}
-
-.container {
+  background: #f4f6f8;
+  color: #1c1f23;
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-.profile {
+/* main card */
+.card {
   display: flex;
   gap: 20px;
   align-items: center;
+
+  background: rgba(255,255,255,0.7);
+  padding: 30px;
+  border-radius: 18px;
+
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 
+/* photo */
 .photo {
   width: 180px;
   height: 180px;
   object-fit: cover;
-  border-radius: 10px;
-  filter: grayscale(100%);
+  border-radius: 14px;
+
+  filter: grayscale(100%) contrast(1.1);
+  opacity: 0.95;
 }
 
-.info h1 {
+/* text */
+h1 {
   margin: 0;
   font-size: 32px;
 }
 
 .verified {
-  margin: 5px 0;
-  color: #aaa;
+  margin: 6px 0;
+  font-size: 14px;
+  color: #6b7c93;
 }
 
+/* status */
 .status {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 10px;
+  margin: 10px 0 15px 0;
+  font-size: 14px;
+  color: #6b7c93;
 }
 
+/* offline dot (grijs zoals jij wilde) */
 .dot {
   width: 10px;
   height: 10px;
@@ -51,13 +65,16 @@ body {
 
 .offline {
   background: #9aa0a6;
+  box-shadow: 0 0 6px rgba(154,160,166,0.4);
 }
 
+/* link */
 .link {
-  color: #4da3ff;
+  color: #6b7c93;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .link:hover {
-  text-decoration: underline;
+  color: #1c1f23;
 }

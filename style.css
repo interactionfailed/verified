@@ -62,14 +62,12 @@ h1 {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-weight: 600;
-  color: #3b82f6;
-}
-
-.verified-badge svg {
-  width: 16px;
-  height: 16px;
-  display: inline-block;
+  font-weight: 500;
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
 }
 
 .verified {

@@ -1,25 +1,63 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>identity</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
 
-  <div class="card">
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
 
-    <img class="photo" src="jouw-foto.jpg" alt="identity">
+.profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 
-    <div class="info">
-      <h1>Jouw Naam</h1>
+.photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: grayscale(100%);
+}
 
-      <p class="verified">
-        verified human • no presence detected
-      </p>
+.info h1 {
+  margin: 0;
+  font-size: 32px;
+}
 
-      <div class="status">
-        <span class="dot offline"></span>
-        <span>online</span>
-      </div>
+.verified {
+  margin: 5px 0;
+  color: #aaa;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.offline {
+  background: #9aa0a6;
+}
+
+.link {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

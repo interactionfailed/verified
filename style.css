@@ -122,8 +122,35 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  /* Maak de card kolommen verticaal op mobiel */
+  .card {
+    flex-direction: column; /* Foto komt boven de tekst */
+    gap: 20px; /* Verhoog de ruimte tussen foto en info */
+    align-items: center; /* Zorg dat alles gecentreerd is */
+  }
+
+  /* Zorg ervoor dat de foto goed wordt weergegeven */
+  .photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+
+  /* Zorg ervoor dat de tekst/info goed uitgelijnd is op mobiel */
+  .info {
+    text-align: center; /* Alles mooi gecentreerd */
+  }
+
+  /* Maak de tekst iets kleiner voor mobiel */
+  h1 {
+    font-size: 28px;
+  }
+}
+
+/*@media (max-width: 768px) {
   .dot {
     width: 16px;
     height: 16px;
   }
-}
+}*/

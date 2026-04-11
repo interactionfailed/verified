@@ -1,80 +1,25 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  color: #1c1f23;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>identity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* main card */
-.card {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+  <div class="card">
 
-  background: rgba(255,255,255,0.7);
-  padding: 30px;
-  border-radius: 18px;
+    <img class="photo" src="jouw-foto.jpg" alt="identity">
 
-  backdrop-filter: blur(12px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-}
+    <div class="info">
+      <h1>Jouw Naam</h1>
 
-/* photo */
-.photo {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 14px;
+      <p class="verified">
+        verified human • no presence detected
+      </p>
 
-  filter: grayscale(100%) contrast(1.1);
-  opacity: 0.95;
-}
-
-/* text */
-h1 {
-  margin: 0;
-  font-size: 32px;
-}
-
-.verified {
-  margin: 6px 0;
-  font-size: 14px;
-  color: #6b7c93;
-}
-
-/* status */
-.status {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 10px 0 15px 0;
-  font-size: 14px;
-  color: #6b7c93;
-}
-
-/* offline dot (grijs zoals jij wilde) */
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.offline {
-  background: #9aa0a6;
-  box-shadow: 0 0 6px rgba(154,160,166,0.4);
-}
-
-/* link */
-.link {
-  color: #6b7c93;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.link:hover {
-  color: #1c1f23;
-}
+      <div class="status">
+        <span class="dot offline"></span>
+        <span>online</span>
+      </div>

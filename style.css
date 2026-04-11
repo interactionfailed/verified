@@ -7,74 +7,70 @@ html, body {
   color: #1c1f23;
 
   background: linear-gradient(135deg, #e9fffb, #f4f6f8);
-  overflow: hidden;
-}
 
-/* CENTER CONTAINER */
-body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* MAIN CARD */
+/* MAIN CARD (2 columns) */
 .card {
   display: flex;
-  gap: 24px;
+  gap: 28px;
   align-items: center;
 
   padding: 34px;
   border-radius: 20px;
 
   background: rgba(255,255,255,0.75);
-  box-shadow: 0 25px 70px rgba(0,0,0,0.12);
   backdrop-filter: blur(14px);
 
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.12);
+
+  transition: transform 0.25s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 30px 90px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
 }
 
-/* FOTO */
+/* PHOTO LEFT */
 .photo {
-  width: 180px;
-  height: 180px;
+  width: 190px;
+  height: 190px;
   object-fit: cover;
   border-radius: 14px;
 
   filter: grayscale(100%) contrast(1.1);
 }
 
-/* INFO BLOCK */
+/* RIGHT SIDE */
 .info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-/* NAAM */
+/* NAME */
 h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 34px;
 }
 
-/* VERIFIED TEXT */
+/* VERIFIED */
 .verified {
   margin: 6px 0;
   font-size: 14px;
   color: #6b7c93;
 }
 
-/* STATUS ROW */
+/* STATUS */
 .status {
   display: flex;
   align-items: center;
   gap: 8px;
 
   margin: 12px 0 18px 0;
-
   font-size: 14px;
   color: #6b7c93;
 }
@@ -87,21 +83,19 @@ h1 {
   display: inline-block;
 }
 
-/* OFFLINE (GRIJS maar zichtbaar) */
+/* GRAY OFFLINE DOT */
 .offline {
   background: #9aa0a6;
   box-shadow: 0 0 10px rgba(154,160,166,0.4);
 }
 
-/* LINK (CONTACT) */
+/* LINK */
 .link {
-  position: fixed;
-  top: 20px;
-  right: 25px;
-
   font-size: 14px;
-  color: #6b7c93;
   text-decoration: none;
+  color: #6b7c93;
+
+  transition: color 0.2s ease;
 }
 
 .link:hover {

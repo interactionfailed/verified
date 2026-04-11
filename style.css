@@ -143,6 +143,7 @@ h1 {
 /* MOBILE */
 @media (max-width: 768px) {
   .card {
+    padding: 24px;
     flex-direction: column;
     gap: 20px;
     align-items: center;

@@ -95,6 +95,7 @@ h1 {
   100% { transform: scale(1); opacity: 0.8; }
 }
 
+/* CONTACT LINK */
 .contact {
   position: fixed;
   top: 20px;
@@ -102,7 +103,6 @@ h1 {
   font-size: 14px;
   color: #6b7c93;
   text-decoration: none;
-
   transition: 0.2s ease;
 }
 
@@ -111,15 +111,14 @@ h1 {
   transform: translateX(-3px);
 }
 
-/* Voeg dezelfde stijl toe voor de "contact" link */
+/* BACK LINK */
 .link {
   position: fixed;
-  top: 20px; /* Zorg dat het bovenaan komt */
-  right: 100px; /* Plaats de "contact" iets links van de "back" link */
+  top: 20px;
+  right: 80px; /* iets meer afstand tot de contactlink */
   font-size: 14px;
   color: #6b7c93;
   text-decoration: none;
-
   transition: 0.2s ease;
 }
 
@@ -127,20 +126,6 @@ h1 {
   color: #111;
   transform: translateX(-3px);
 }
-
-/* LINK 
-.link {
-  font-size: 14px;
-  text-decoration: none;
-  color: #6b7c93;
-
-  transition: 0.2s ease;
-}
-
-.link:hover {
-  color: #111;
-  transform: translateX(3px);
-}*/
 
 /* PAGE ANIMATION */
 @keyframes pageIn {
@@ -154,15 +139,14 @@ h1 {
   }
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
-  /* Maak de card kolommen verticaal op mobiel */
   .card {
-    flex-direction: column; /* Foto komt boven de tekst */
-    gap: 20px; /* Verhoog de ruimte tussen foto en info */
-    align-items: center; /* Zorg dat alles gecentreerd is */
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 
-  /* Zorg ervoor dat de foto goed wordt weergegeven */
   .photo {
     width: 150px;
     height: 150px;
@@ -170,20 +154,11 @@ h1 {
     border-radius: 14px;
   }
 
-  /* Zorg ervoor dat de tekst/info goed uitgelijnd is op mobiel */
   .info {
-    text-align: center; /* Alles mooi gecentreerd */
+    text-align: center;
   }
 
-  /* Maak de tekst iets kleiner voor mobiel */
   h1 {
     font-size: 28px;
   }
 }
-
-/*@media (max-width: 768px) {
-  .dot {
-    width: 16px;
-    height: 16px;
-  }
-}*/

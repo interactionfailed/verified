@@ -149,6 +149,7 @@ h1 {
   }
 
   .photo {
+    order: -1;
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -161,19 +162,5 @@ h1 {
 
   h1 {
     font-size: 28px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* mobiel: onder elkaar */
-  }
-
-  .image {
-    order: 1; /* foto boven */
-  }
-
-  .map {
-    order: 2; /* kaart onder */
   }
 }

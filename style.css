@@ -111,22 +111,6 @@ h1 {
   transform: translateX(-3px);
 }
 
-/* BACK LINK */
-.link {
-  position: fixed;
-  top: 20px;
-  right: 80px; /* iets meer afstand tot de contactlink */
-  font-size: 14px;
-  color: #6b7c93;
-  text-decoration: none;
-  transition: 0.2s ease;
-}
-
-.link:hover {
-  color: #111;
-  transform: translateX(-3px);
-}
-
 /* PAGE ANIMATION */
 @keyframes pageIn {
   from {

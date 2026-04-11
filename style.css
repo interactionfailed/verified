@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: grayscale(100%);
+}
+
+.info h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.verified {
+  margin: 5px 0;
+  color: #aaa;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.offline {
+  background: red;
+}
+
+.link {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

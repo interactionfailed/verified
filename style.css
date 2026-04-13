@@ -105,8 +105,11 @@ h1 {
   font-size: 12px;
   line-height: 1;
   flex-shrink: 0;
-
   -webkit-text-fill-color: white;
+}
+
+.check svg {
+  fill: white;
 }
 
 /* offline */
